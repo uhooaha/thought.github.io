@@ -1,55 +1,59 @@
-@font-face {
+/* @font-face {
     font-family: CMR;
     src: url(../fonts/cmuserif_roman_macroman/cmunrm-webfont.woff);
   }
   @font-face {
     font-family: CMB;
     src: url(../fonts/cmuserif_bold_macroman/cmunbx-webfont.woff);
-  }
+  } */
+
+@import url('https://use.typekit.net/olf5jfg.css');
+
+* {
+    font-family: "gowun-batang", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* font-weight:700 재공*/
 
 
 .LatexTitle{
-    font-family: CMR;
-    font-size: 40px;
-    padding-top: 40vh;
+    font-size: 5rem;
+    padding-top: 20vh;
     text-align: center;
     margin-bottom: 20px;
 }
 
 .LatexName{
-    font-family: CMR;
     font-size: 27px;
     text-align: center;
     margin-bottom: 13px;
 }
 .LatexDate{
-    font-family: CMR;
-    font-size: 27px;
+    font-size: 1.275rem;
     text-align: center;
     margin-top: 13px;
     margin-bottom: 45px;
 }
 
 .LatexAbstract{
-    font-family: CMB;
     font-weight: bold;
-    font-size: 25px;
+    font-size: 1.325rem;
     text-align: center;
     margin-bottom: 10px;
 }
 
 .LatexAbstractText{
     margin-top:10px;
-    font-family: CMR;
-    font-size: 21px;
+    font-size: 1.325rem;
     text-align: center;
-    text-align: justify;
-    text-indent: 20px
+    width:100%;
 }
 
 .Margins{
-    padding-left: 21%;
-    width: 58%;
+    width: 30%;
+    margin: 0 auto;
 }
 
 .AbstractMargins{
@@ -58,35 +62,38 @@
     padding-bottom: 15px;
 }
 
-.Section{
-    font-family: CMB;
-    font-size: 33px;
-    text-align: Left;
-    margin-top: 13px;
-    margin-bottom: 20px;
-}
-
 
 .SubSection{
-    font-family: CMB;
     font-size: 29px;
     text-align: Left;
     margin-top: 13px;
     margin-bottom: 20px;
 }
 
-.BodyText{
-    font-family: CMR;
-    font-size: 23px;
-    text-align: Left;
-    margin-top: 13px;
-    margin-bottom: 45px;
-    line-height: 125%;
+section {
+    padding:1.5rem 0 2rem 0
+}
+blockquote {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding:1rem 0;
+}
+section article p{
+    font-size: 1.175rem;
+    text-align: justify;
+    margin:2.5rem 0 2.5rem 0;
+    line-height: 160%;
     column-count: 1;
 }
-
+section > h5 {
+    font-size: 33px;
+    font-weight: 700;
+    text-align: Left;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
 .BodyText2Col{
-    font-family: CMR;
     font-size: 23px;
     text-align: Left;
     margin-top: 13px;
@@ -96,7 +103,6 @@
 }
 
 .BodyText3Col{
-    font-family: CMR;
     font-size: 23px;
     text-align: Left;
     margin-top: 13px;
@@ -153,4 +159,16 @@
 
 .HUGE{
     font-size: 33px;
+}
+
+@media screen and (max-width:960px){ 
+    .Margins {width:58%;}
+}
+
+@media screen and (max-width:1440px){ 
+    .Margins {width:50%;}
+}
+
+@media screen and (max-width:1680px){ 
+    .Margins {width:45%;}
 }
